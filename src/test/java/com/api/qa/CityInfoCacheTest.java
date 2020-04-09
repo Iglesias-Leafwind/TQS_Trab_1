@@ -1,5 +1,6 @@
 package com.api.qa;
 
+import com.api.qa.city.CityInfoCache;
 import org.json.JSONException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -54,7 +55,7 @@ class CityInfoCacheTest {
     }
     @Test
     void getNone(){
-        assertThat(cache.getInfo("")).isEqualTo(null);
+        assertThat(cache.getInfo("").getError()).isEqualTo(true);
     }
     @Test
     void getSomething() throws IOException, JSONException{
@@ -63,7 +64,7 @@ class CityInfoCacheTest {
     }
     @Test
     void getOnEmpty(){
-        assertThat(cache.getInfo(porto)).isEqualTo(null);
+        assertThat(cache.getInfo(porto).getError()).isEqualTo(true);
     }
     @Test
     void checkOnEmpty(){

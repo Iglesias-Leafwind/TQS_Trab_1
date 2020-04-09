@@ -1,5 +1,6 @@
 package com.api.qa;
 
+import com.api.qa.city.Info;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

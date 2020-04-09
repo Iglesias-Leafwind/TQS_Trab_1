@@ -1,4 +1,4 @@
-package com.api.qa;
+package com.api.qa.city;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,6 +13,7 @@ import org.json.JSONObject;
 
 public class JsonReader {
 
+    private JsonReader(){}
     private static String readAll(Reader rd) throws IOException {
         StringBuilder sb = new StringBuilder();
         int cp;
@@ -33,8 +34,11 @@ public class JsonReader {
             is.close();
         }
     }
-    public static Info convertJsonInfo(String city_name) throws IOException, JSONException {
-        JSONObject json = readJsonFromUrl("https://api.waqi.info/feed/" + city_name + "/?token=3de72aaf07dae32b6339922dffb3c386144bf3c5");
+    public static Info convertJsonInfo(String cityName) throws IOException, JSONException {
+        JSONObject json = readJsonFromUrl("https://api.waqi.info/feed/" + cityName + "/?token=3de72aaf07dae32b6339922dffb3c386144bf3c5");
+        if(json.getString("status").equals("error")){
+            return new Info();
+        }
         json = json.getJSONObject("data");
         JSONObject jsoninfo = json.getJSONObject("iaqi");
         JSONObject jsoncity = json.getJSONObject("city");

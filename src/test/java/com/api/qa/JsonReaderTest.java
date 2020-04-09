@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
 
-import static com.api.qa.JsonReader.readJsonFromUrl;
+import static com.api.qa.city.JsonReader.readJsonFromUrl;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
