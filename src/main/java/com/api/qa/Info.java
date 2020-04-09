@@ -1,4 +1,4 @@
-package com.kys.qa;
+package com.api.qa;
 
 public class Info {
 

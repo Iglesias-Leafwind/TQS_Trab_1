@@ -1,4 +1,4 @@
-package com.kys.qa;
+package com.api.qa;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
 
-import static com.kys.qa.JsonReader.readJsonFromUrl;
+import static com.api.qa.JsonReader.readJsonFromUrl;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest

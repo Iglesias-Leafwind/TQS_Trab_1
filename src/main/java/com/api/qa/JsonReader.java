@@ -1,4 +1,4 @@
-package com.kys.qa;
+package com.api.qa;
 
 import java.io.BufferedReader;
 import java.io.IOException;
