@@ -39,6 +39,7 @@ public class APITest {
         when(portoInf.getOverallQuality()).thenReturn(20);
         when(americaInf.getOverallQuality()).thenReturn(200);
     }
+
     @Test
     void searchPorto() throws IOException, JSONException {
         System.out.println(api.search("porto"));

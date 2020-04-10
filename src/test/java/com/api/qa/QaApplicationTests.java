@@ -5,7 +5,5 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class QaApplicationTests {
-
-	/*WebTestsWillBeHere*/
-
+    /*Nothing to test here*/
 }

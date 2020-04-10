@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset=\"UTF-8\">
+    <title th:text="${name}"></title>
+</head>
+<body style="background-color:Orange;">
+<div>
+    <center><h1 th:text="${cityName}"></h1></center>
+    <center><p>I couldn't find <span th:text="${name}"></span></p></center>
+    <center><p> Press the button to go back to the search page! </p></center>
+    <center><form action="/">
+        <input type="submit" value="Go back" class="btn btn-warning" style="background-color: orange,font-size: 24px"/>
+    </form></center>
+</div>
+</body>
+</html>

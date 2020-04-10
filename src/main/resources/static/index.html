@@ -20,7 +20,10 @@
         function redirect(form){
             var searching = form.searchBar;
             var href = window.location.href.replace('?','');
-            window.location.href = href + "/cities/" + searching.value;
+            window.location.href = href + "/cities/" + searching.value + " /";
+            if(searching.value.equals("")){
+            window.location.href = window.location.href + " /";
+            }
         }
     </script>
 </body>

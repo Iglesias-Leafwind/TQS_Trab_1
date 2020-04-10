@@ -31,6 +31,7 @@ public class Info {
     }
 
     public boolean getError(){ return error; }
+
     private final int overallQuality;
     private final String name;
     private final String time;

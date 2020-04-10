@@ -9,6 +9,7 @@ import java.util.LinkedHashMap;
 public class CityInfoCache {
     private HashMap<String, Info> cityAirInfo;
     private int maxSize;
+
     public CityInfoCache(int cacheSize){
         cityAirInfo = new LinkedHashMap<>();
         this.maxSize = cacheSize;

@@ -34,6 +34,7 @@ class CityInfoCacheTest {
     public void clear(){
         cache.clear();
     }
+
     @Test
     void insertOnEmpty() throws IOException, JSONException {
         assertThat(cache.insertInfo(porto)).isEqualTo(true);

@@ -1,0 +1,6 @@
+projectKey=TQS_Trab_1
+serverUrl=http://localhost:9000
+serverVersion=8.2.0.32929
+dashboardUrl=http://localhost:9000/dashboard?id=TQS_Trab_1
+ceTaskId=AXFgN-OoNhOPVr26Hv4c
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXFgN-OoNhOPVr26Hv4c
